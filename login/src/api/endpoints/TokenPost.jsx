@@ -8,7 +8,7 @@ const TokenPost = () => {
   function handleSubmit(event) {
     event.preventDefault();
 
-    fetch('https://api.midiacarros.com.br/json/jwt-auth/v1/token', {
+    fetch('https://api.midiacarros.com.br/clients/token', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
