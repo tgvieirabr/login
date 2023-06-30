@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { ReactComponent as Dogs } from '../Assets/dogs-footer.svg';
+import { ReactComponent as Car } from '../Assets/car-footer.svg';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Dogs />
-      <p>Dogs. Alguns direitos reservados.</p>
+      <Car />
+      <p>Front-end na serra. Todos direitos reservados.</p>
     </footer>
   );
 };

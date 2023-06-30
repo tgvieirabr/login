@@ -4,18 +4,22 @@
   cursor: pointer;
   border: none;
   border-radius: 0.4rem;
-  background: #fb1;
-  color: #764701;
+  background: #6abe45;
+  color: #333333;
   min-width: 8rem;
   padding: 0.8rem 1.2rem;
   box-sizing: border-box;
   transition: 0.1s;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
 }
 
 .button:hover,
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;
+  box-shadow: 0 0 0 3px #fea, 0 0 0 4px #3b897b;
 }
 
 .button:disabled {

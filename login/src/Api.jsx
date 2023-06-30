@@ -1,4 +1,4 @@
-export const API_URL = 'https://dogsapi.origamid.dev/json';
+export const API_URL = 'https://api.midiacarros.com.br/json';
 
 export function TOKEN_POST(body) {
   return {
@@ -65,7 +65,7 @@ export function PHOTO_POST(formData, token) {
 
 export function PHOTOS_GET({ page, total, user }) {
   return {
-    url: `${API_URL}/api/photo/?_page=${page}&_total=${total}&_user=${user}`,
+    url: `${API_URL}/arts/?_page=${page}&_total=${total}&_user=${user}`,
     options: {
       method: 'GET',
       cache: 'no-store',

@@ -7,7 +7,7 @@ const Home = () => {
     <section className="container mainContainer">
       <Head
         title="Fotos"
-        description="Home do site Dogs, com o feed de fotos."
+        description="Home do site car, com o feed de fotos."
       />
       <Feed />
     </section>
