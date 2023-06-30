@@ -1,0 +1,165 @@
+Endpoint: /arts
+
+Métodos:
+GET: getArtList
+POST: createNewArt
+Parâmetros:
+Query Parameters:
+page
+limit
+type
+searchTxt
+artType
+idEvent
+idsColors
+idAdm
+use
+status
+Body Parameters (POST):
+CreateArtsProps
+Endpoint: /arts/birthday
+
+Métodos:
+GET: getArtListBirthDay
+Parâmetros:
+Query Parameters:
+page
+limit
+type
+searchTxt
+artType
+idEvent
+idsColors
+idAdm
+use
+status
+Endpoint: /arts/{idArt}
+
+Métodos:
+PUT: updateArt
+DELETE: deleteArt
+Parâmetros:
+Path Parameters:
+idArt
+Body Parameters (PUT):
+CreateArtsProps
+Endpoint: /arts/view
+
+Métodos:
+GET: getFavoritesArts
+Parâmetros:
+Query Parameters:
+idUser
+Endpoint: /arts/recommended
+
+Métodos:
+GET: getArtsRecommended
+Parâmetros:
+Query Parameters:
+idArt
+Endpoint: /arts/import
+
+Métodos:
+POST: userImportArt
+Parâmetros:
+Body Parameters:
+attachment
+idUser
+Endpoint: /arts/orders
+
+Métodos:
+GET: getArtsPending
+Parâmetros:
+Query Parameters:
+page
+limit
+idUser
+status
+Endpoint: /arts/orders/status
+
+Métodos:
+PATCH: updateStatusArts
+Parâmetros:
+Query Parameters:
+idArtOrder
+status
+Endpoint: /arts/used
+
+Métodos:
+POST: createUsedArt
+Parâmetros:
+Body Parameters:
+CreateUsedArtProps
+Endpoint: /arts/used/birthday
+
+Métodos:
+POST: createUsedArtWhatsapp
+Parâmetros:
+Body Parameters:
+CreateUsedArtPropsWhatsapp
+Endpoint: /arts/used/view
+
+Métodos:
+PATCH: getTemplatePreview
+Parâmetros:
+Query Parameters:
+idArt
+idUser
+idVehicle
+logoClient
+photoVehicle
+message
+birthDay
+firstName
+isEnabledRemoveBg
+Body Parameters:
+message
+isRemoveBg
+Endpoint: /arts/used/{idArtUsed}
+
+Métodos:
+PUT: updateEditArt
+DELETE: remove
+Parâmetros:
+Path Parameters:
+idArtUsed
+Body Parameters (PUT):
+UpdateUsedArtProps
+Endpoint: /arts/used/publish
+
+Métodos:
+PATCH: resendArt
+Parâmetros:
+Body Parameters:
+idArtUsed
+idUser
+type
+Endpoint: /arts/used/removeScheduled
+
+Métodos:
+PATCH: removeScheduled
+Parâmetros:
+Body Parameters:
+idArtUsed
+Endpoint: /arts/used/scheduled
+
+Métodos:
+PATCH: scheduledArt
+Parâmetros:
+Body Parameters:
+idArtUsed
+idUser
+dateSend
+type
+Endpoint: /arts/colors
+
+Métodos:
+GET: allColorsList
+Endpoint: /arts/used/limitUsed
+
+Métodos:
+GET: getUsedArtCodition
+Parâmetros:
+Query Parameters:
+idUser
+
