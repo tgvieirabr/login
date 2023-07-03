@@ -1,8 +1,8 @@
-export const API_URL = 'https://api.midiacarros.com.br/json';
+export const API_URL = 'https://api.midiacarros.com.br';
 
 export function TOKEN_POST(body) {
   return {
-    url: API_URL + '/jwt-auth/v1/token',
+    url: API_URL + '/clients/token',
     options: {
       method: 'POST',
       headers: {

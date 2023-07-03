@@ -30,8 +30,8 @@ function App() {
                   </ProtectedRoute>
                 }
               />
-              <Route path="foto/:id" element={<Photo />} />
-              <Route path="perfil/:user" element={<UserProfile />} />
+              <Route path="user/:id" element={<Photo />} />
+              <Route path="arts/:user" element={<UserProfile />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
