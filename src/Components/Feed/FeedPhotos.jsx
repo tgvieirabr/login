@@ -24,10 +24,12 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
   if (data)
     return (
       <ul className={`${styles.feed} animeLeft`}>
-        {data.map((photo) => (
+        {data.result.list.map((card) => (
           <FeedPhotosItem
-            key={photo.id}
-            photo={photo}
+            key={card.id}
+            title={card.title}
+            thumb={card.thumb}
+            user_name={card.user_name}
             setModalPhoto={setModalPhoto}
           />
         ))}
