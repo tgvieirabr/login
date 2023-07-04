@@ -137,7 +137,7 @@ export function PASSWORD_RESET(body) {
 
 export function STATS_GET() {
   return {
-    url: API_URL + '/api/stats',
+    url: API_URL + '/stats',
     options: {
       method: 'GET',
       headers: {
