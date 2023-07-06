@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './UserPhotoPost.module.css';
 import useForm from '../../Hooks/useForm';
 import useFetch from '../../Hooks/useFetch';
